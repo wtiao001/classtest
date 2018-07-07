@@ -1,3 +1,53 @@
+<!DOCTYPE html>
 <html>
-    hello class. This is a GitHub pages test.
+    <head>
+        <link rel="stylesheet" href="css/intro.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="welcome-section content-hidden">
+            <div id="intro" class="content-wrap">
+                <ul class="fly-in-text">
+                    <li>w</li>
+                    <li>e</li>
+                    <li>l</li>
+                    <li>c</li>
+                    <li>o</li>
+                    <li>m</li>
+                    <li>e</li>
+                </ul>
+                <a href="projects.html" class="enter-button">enter</a>
+            </div>
+        </div>  
+        <div>
+            <h1>
+                <span class=" ud_bounc ud_1">w</span>
+                <span class=" ud_bounc ud_2">e</span>
+                <span class=" ud_bounc ud_3">l</span>
+                <span class=" ud_bounc ud_4">c</span>
+                <span class=" ud_bounc ud_5">o</span>
+                <span class=" ud_bounc ud_6">m</span>
+                <span class=" ud_bounc ud_7">e</span>
+            </h1> 
+            <a href="projects.html" class="enter-button">enter</a>
+        </div>
+           
+       <script type="text/javascript">
+            
+            $(function() {
+                var welcomeSection = $('.welcome-section'),
+                    enterButton= welcomeSection.find('.enter-button');
+                
+                setTimeout(function(){
+                    welcomeSection.removeClass('content-hidden'); },800);
+                
+                enterButton.on('click', function(e) {
+                    
+                    welcomeSection.addClass('content-hidden').fadeOut();
+                });
+                });
+        </script>
+    </body>
 </html>

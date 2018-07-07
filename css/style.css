@@ -1,0 +1,289 @@
+body{
+    background: beige;
+}
+
+
+.pics img{
+    width: 50%;
+    height: 70%;
+    padding-top: 15%;
+    padding-left: 10%;
+    position: relative;
+    
+}
+
+#info {
+    width: 70%;
+    padding-top: 100px;
+    padding-left: 10%;
+    margin-left:80px;
+    position: relative;
+    font-size:20px;
+    color:rosybrown;
+    font-family: sans-serif; 
+}
+
+.fotorama {
+    width: 50%;
+    position: absolute;
+    left:0;
+    padding-top:15%;
+    padding-left: 10%;
+    margin-left: 17%;
+    display: inline;
+}
+h1{
+    display: inline-block;
+    padding-top: 15px;
+    padding-left:10px;
+    margin: 0;
+    font-size: 40px;
+    font-family:"Raleway Semibold", sans-serif;
+    color: grey;
+    position: fixed;
+    z-index: 10;
+}
+#mySidenav a{
+    position: fixed;
+    left: 0px;
+    transition: .5s;
+    padding-top: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: dimgray;
+}
+
+#mySidenav a:hover {
+    left:15px;
+    position:fixed;
+}
+
+*#mySidenav  a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -2px;
+  left: 20px;
+  background-color: dimgray;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#mySidenav  a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#mySidenav  a:active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+background-color: #933E3E;
+}
+
+#mySidenav a:active {
+    color: skyblue; 
+}
+
+#mySidenav a:focus {
+    color: skyblue;
+    left: 15px;
+}
+
+#mySidenav  a:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: skyblue;
+}
+/* navigation spacing */
+#about {
+    top: 80px;
+    font-family:sans-serif;
+    
+}
+#photos {
+    top: 130px;
+    font-family:sans-serif;
+   
+}
+#projects {
+    top: 180px;
+    font-family:sans-serif;
+    
+}
+#contact {
+    top: 230px;
+    font-family:sans-serif;
+   
+}
+
+@media (max-width: 640px) {
+    body{ background: DarkSeaGreen;
+    }
+    
+    .pics img{
+        width:100%;
+        padding:0;
+        margin-top:25vw;
+    }
+    #info {
+        width: 100%;
+        padding-top: 25vw;
+        padding-left: 0;
+        margin-left:0;
+        margin: 5px;
+        position: relative;
+        font-size:20px;
+        color:darkslategray;
+        
+}
+    .fotorama {
+        margin-top:25vw;
+        width:100%;
+        padding-top:0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    h1{
+        display: inline-block;
+        padding-top: 15px;
+        padding-left:10px;
+        width:10%;
+        margin: 0;
+        font-size: 6.5vw;
+        font-family:"Raleway Semibold", sans-serif;
+        color: cornsilk;
+        z-index: 10;      
+    }
+    #mySidenav #about{
+        left:20%;
+    }
+    #mySidenav #photos{
+        left:36%;
+    }
+
+    #mySidenav #projects{
+        left:54%;
+    }
+    #mySidenav #contact{
+        left:74%;
+    }
+    
+    /*#projectDrop a{
+        display:none;
+    }
+    
+    #projects:hover #projectDrop a{
+        display:block;
+    }*/
+    
+    #mySidenav a{
+        display: inline-block; 
+        transition: .5s;
+        text-decoration: none;
+        font-size: 5vw;
+        color: cornsilk;
+        z-index:10;
+    }
+
+    #mySidenav a:hover {
+    left:20%;
+    top:5vw;    
+    color:cornsilk;
+}
+
+#mySidenav  a:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -2px;
+  left: ;
+  background-color: cornsilk;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#mySidenav  a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#mySidenav  a:active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+background-color: #FEE4F6;
+}
+
+#mySidenav a:active {
+    color: #FEE4F6; 
+    left: 20%;
+    top:5vw; 
+}
+
+#mySidenav a:focus {
+    color: #FEE4F6;
+    left: 20%;
+    top:5vw;
+}
+
+#mySidenav  a:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: #FEE4F6;
+}
+/* navigation spacing */
+#about {
+    top: 3.3vw;
+    font-family:sans-serif;
+    
+}
+#photos {
+    top: 3.3vw;
+    font-family:sans-serif;
+   
+}
+#projects {
+    top: 3.3vw;
+    font-family:sans-serif;
+    
+}
+#contact {
+    top: 3.3vw;
+    font-family:sans-serif;
+   
+}
+    #projDrop {
+        display:none;
+    }
+    #projects: hover #projDrop{
+        display:inline-block;
+        
+    }
+}
+.pics ,.fotorama, #tab1{
+    -webkit-animation: fadeEffect 1.25s;
+    animation: fadeEffect 1.25s;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
